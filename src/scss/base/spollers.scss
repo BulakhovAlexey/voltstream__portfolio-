@@ -1,0 +1,139 @@
+// Основные спойлеры
+// Фрагмент (HTML): spoller
+
+// Спойлеры блокируют
+.spollers {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0 -20px;
+}
+.spollers__col1{
+	flex: 0 1 50%;
+}
+.spollers__col2{
+	flex: 0 1 50%;
+}
+// Спойлер
+.spollers__item {
+	margin-bottom: 20px;
+	padding: 0 20px;
+	flex: 0 1 40%;
+	font-size: rem(21);
+	grid-column: span 1;
+	grid-row: span 1;
+}
+// Заголовок спойлера
+.spollers__title {
+	font-weight: 500;
+	line-height: 114%;
+	border: 1px solid $color-white;
+	width: 100%;
+	cursor: default;
+	text-align: left;
+	padding: rem(30) rem(78) rem(30) rem(30);
+	border-radius: rem(6);
+	position: relative;
+	._spoller-init & {
+		cursor: pointer;
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			right: 33px;
+			top: 50%;
+			background-color: $color-white;
+			height: 2px;
+			width: 15px;
+			transition: transform 0.5s ease 0s;
+		}
+		&::before {
+			transform: translate(-75%, -50%) rotate(45deg);
+		}
+		&::after {
+			transform: translate(0, -50%) rotate(-45deg);
+		}
+		&._spoller-active {
+			border-bottom: none;
+			border-radius: rem(6) rem(6) 0 0;
+			&::before {
+				transform: translateX(-75%) rotate(-45deg);
+			}
+			&::after {
+				transform: rotate(45deg);
+			}
+		}
+		
+	// 	._spoller-init & {
+	// 		position: relative;
+	// 		width: 100%;
+	// 		text-align: left;
+	// 		&::before,
+	// 		&::after {
+	// 			content: "";
+	// 			position: absolute;
+	// 			right: 0;
+	// 			top: rem(12);
+	// 			height: rem(1);
+	// 			transition: all 0.3s ease 0s;
+	// 			width: rem(10);
+	// 			background-color: #000;
+	// 		}
+	// 		&::before {
+	// 			transform: rotate(40deg);
+	// 			right: rem(7);
+	// 		}
+	// 		&::after {
+	// 			transform: rotate(-40deg);
+	// 		}
+	// 	}
+	// 	&._spoller-active {
+	// 		&::before {
+	// 			transform: rotate(-40deg);
+	// 		}
+	// 		&::after {
+	// 			transform: rotate(40deg);
+	// 		}
+	// 	}
+		
+	 }
+}
+// Контент спойлера
+.spollers__body {
+	font-weight: 500;
+	padding: 0 rem(30) rem(30) rem(30);
+	line-height: 170%;
+	border-radius:0 0 rem(6) rem(6);
+	border: 1px solid #eee;
+	border-top:none;
+}
+
+
+@media (max-width: em(870)){
+	.spollers__item {
+		margin-bottom: 12px;
+	} 
+	.spollers__body{
+		font-size: rem(9);
+		padding: 0 rem(16) rem(16) rem(16);
+	}
+	.spollers__title {
+		padding: rem(16) rem(42) rem(16) rem(16);
+		font-size: rem(11);
+		._spoller-init & {
+			&::before,
+			&::after {
+				content: "";
+				right: 22px;
+				height: 1px;
+				width: 10px;
+			}
+		}
+	}
+}
+@media (max-width: em(550)){
+	.spollers__col1,
+	.spollers__col2 {
+		flex: 1 1 100%;
+	}  
+}

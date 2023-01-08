@@ -1,0 +1,419 @@
+// media
+
+@media screen and (max-width:1341px){
+    .rocks__title{
+        font-size: 90px;
+    }
+    
+}
+@media screen and (max-width:1278px) {
+    .header-inner__list-item {
+        margin: 0 10px;
+    }
+    .header-inner__line{
+        padding: 0 10px;
+    }
+    .header-inner__actions{
+        padding: 0 10px;
+    }  
+    // .laurels__photo {
+    //     left: 50%;
+    //     transform: translate(-50%);
+    // }
+    .laurels__body {
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width:1040px) {
+    .main-content {
+        &__sub-title {
+            font-size: 18px;
+            line-height: 23px;
+        }
+        &__title {
+            font-size: 45px;
+            line-height: 65px;
+            letter-spacing: 0.02em;
+            margin-bottom: 30px;		
+        }
+    }
+    .additional-header {
+        margin-top: 80px;
+        padding: 250px 0 308px 0;
+        &__title {
+            font-size: 60px;
+            line-height: 90px;
+            margin-bottom: 24px;
+        }
+    }
+    .header-inner--active {
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        align-items: flex-start;
+        background-color: rgba($color: #120202, $alpha: .9);
+        transition: all .3s;
+    }
+    .header-inner__burger {
+        opacity: 1;
+    }
+    .header-inner__actions {
+        padding-right: 150px;
+    }
+    .header-inner__list {
+        display: block;
+        position: absolute;
+        height: 100%;
+        top: 150px;
+        left: 10px;
+        font-size: 30px;
+        line-height: 40px;
+        top: -300%;
+        transition: all 0.3s;
+    }
+    .header-inner__list--active {
+        top: 150px;
+    }
+    .new-flavour__body {
+        margin-right: 90px;
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+    .new-flavour__title {
+        font-size: 70px;
+        line-height: 80px;
+        margin-bottom: 25px;
+    }
+    .new-flavour__image {
+        margin-top: 40px;
+    }
+    .new-flavour__wrapper {
+        flex-wrap: wrap;
+    }
+    .special__card-picture {
+        order: 3;
+        flex: 0 0 100%;
+    }
+    .special__card-item {
+        flex: 0 1 50%;
+    }
+    .drink-list-item__title {
+        font-size: 35px;
+        line-height: 48px;
+        margin-bottom: 28px;
+    }
+    .laurels__inner {
+        flex-wrap: wrap;
+    }
+    .laurels__photo {
+        flex: 1 1 100%;
+    }
+}
+@media screen and (max-width: 1008px) {
+    .footer__body{
+        justify-content: center;
+    }
+    .social-footer {
+        order: -1;
+        flex: 1 1 100%;
+    }
+    .social-footer__logo {
+        padding-top: 20px;
+    }
+    .chefs-details__text {
+        margin-bottom: 30px;
+    }
+    .chefs-details__awards-list{
+        margin-bottom: 30px!important;
+    }
+    .chefs-details__awards-items{}
+    .personal-achievements{
+        &__body{
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    .personal-achievements__photo{
+        order: -1;
+    }
+    .blog,
+    .customers__wrapper,
+    .chefs-word,
+    .special__inner,
+    .about__inner,
+    .book-table__container{
+        padding: 70px 0;
+    }
+    .new-flavour{
+        padding: 146px 0 140px 0;
+    }
+    .customers__wrapper{
+        padding: 100px 0;
+    }
+    .customers__inner {
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 34px;
+    }
+    .swiper.new-flavour__slider{
+        flex: 0 1 100%;
+       
+    }
+    .happy-hours::after{
+        display: none;
+    }
+}
+@media screen and (max-width: 870px){
+    .bar-about__body{
+        order: -1;
+    }
+    .bar-about__inner{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .chefs-details{
+        &__inner{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        }
+        &__info{
+            min-width: 100%;
+        }
+        &__photo{
+            min-width: 340px;
+            margin-bottom: 30px;
+        }
+    }
+    .new-flavour__body {
+        margin-right: 10px;
+    }
+    .new-flavour__title {
+        font-size: 50px;
+        line-height: 60px;
+        margin-bottom: 15px;
+    }
+    .chefs-word__picture{
+        margin-bottom: 20px;
+        flex: 1 1 100%;
+        min-width: 0;
+    }
+    .menu-list__link {
+        font-size: 54px;
+        line-height: 73px;
+        letter-spacing: .03em;
+    }
+    .menu-list__item {
+		margin-bottom: 44px;
+	}
+	.menu-list__item:last-child{
+		margin-bottom: 0;
+	}
+    .book-table__form select {
+        height: 50px;
+    }
+    .menu-list__inner {
+        padding: 200px 10px 200px 10px;
+    }
+    .about__title {
+        font-size: 44px;
+        line-height: 63px;
+        margin-bottom: 25px;
+    }
+    .about__inner{
+        margin: 0 -90px;
+    }
+    .about__item{
+        padding: 0 90px;
+    }
+    .rocks__title {
+        font-size: 70px;
+    }
+    .poison__cards {
+        flex-wrap: wrap;
+    }
+    .poison__card {
+        min-width: 300px;
+    }
+    .happy-hours__title{
+        font-size: 80px;
+        line-height: 90px;
+    }
+    .contact::after, .contact::before{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 697px) {
+    .header-inner__actions {
+        display: block;
+        position: absolute;
+        left: 10px;
+        top: 400px;
+        opacity: 0;
+        margin-left: 10px;
+    }
+    .newsletter{
+        padding-top: 150px;
+    }
+    .customers__customer {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .header-inner__actions--active {
+        opacity: 1;
+        transition: all 0.6s 0.5s;
+
+    }
+    .header-inner__login-link,
+    .header-inner__book-link{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .header-inner__line{
+        display: none;
+
+    }
+    
+}
+@media screen and (max-width:657px) {
+    .laurels__photo {
+        display: none;
+    }
+    .laurels__awards {
+        grid-template-columns: repeat(1,1fr);
+        column-gap: 22px;
+        row-gap: 44px
+    }
+    .special__card-picture {
+        display: none;
+    }
+    .special__card-item {
+        flex: 0 1 100%;
+    }
+    .rocks__title {
+        font-size: 50px;
+    }
+}
+
+
+@media screen and (max-width:550px) {
+    .footer {
+        padding: 128px 10px 80px 10px;
+    }
+    .footer-title{
+        line-height: 28px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .footer__body {
+        padding-bottom: 30px;
+    }
+    .additional-header__breadcrumbs {
+        font-size: 19px;
+        line-height: 24px;
+    }
+    .additional-header__item-crumb {
+        padding-right: 18px;
+        margin-right: 10px;
+        &::after {
+            height: 10px;
+        }
+    }
+    .additional-header {
+        padding: 200px 0 200px 0;
+    }
+    .blog::after,
+    .customers__wrapper::after,
+    .book-table::after,
+    .about::after {
+        display: none;
+    }
+    .new-flavour{
+        padding: 146px 0 50px 0;
+    }
+    .personal-achievements__awards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .personal-achievements__body{
+        padding: 128px 0 70px 0;
+    }
+    .blog,
+    .laurels,
+    .chefs-word,
+    .special__inner,
+    .about__inner,
+    .book-table__container,
+    .poison__inner,
+    .contact{
+        padding: 40px 0;
+    }
+    .rocks{
+        padding-bottom: 40px;
+    }
+    .chefs-word__aothor{
+        margin-top: 40px;
+    }
+    .chefs-word__position {
+        margin-bottom: 40px;
+    }
+    .menu-list__link {
+        font-size: 34px;
+        line-height: 53px;
+        letter-spacing: .02em;
+    }
+    .menu-list__item {
+		margin-bottom: 24px;
+	}
+	.menu-list__item:last-child{
+		margin-bottom: 0;
+	}
+    .about__inner{
+        margin: 0 -10px;
+    }
+    .about__item{
+        padding: 0 10px;
+    }
+    .about {
+        min-height: 0;
+    }
+    .about__item--left {
+        text-align: left;
+    }
+    .about__title::after{
+        left: 0;
+    }
+    .gold-button {
+        margin-left: 0;
+    }
+    .about__item {
+        flex: 0 1 100%;
+    }
+    .newsletter{
+        padding-top: 70px;
+    }
+    .rocks__title {
+        font-size: 30px;
+    }
+    .rocks__scroll-button,
+    .rocks__hashtags {
+        display: none;
+    }
+    .happy-hours__title{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .happy-hours__time{
+        font-size: 20px;
+        line-height: 26px;
+        padding: 0 10px;
+    }
+}
+@media screen and (max-width:381px) {
+    .additional-header__breadcrumbs {
+        font-size: 16px;
+        line-height: 18px;
+        &::after {
+            top: 4px;
+        }
+    }
+}

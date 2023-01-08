@@ -1,0 +1,139 @@
+// Общий файл элементов формы
+// подключить/отключить стили определенного элемента формы base/forms/forms.scss
+@import "base/forms/forms";
+
+// Popp Styles
+//@import "base/popup";
+
+// Стили спойлеров
+@import "base/spollers";
+
+// Тейс стили
+// @import "base/tabs";
+
+// Карты стили
+// @import "base/maps";
+
+// Стили блока "покажите еще"
+// @import "base/showmore";
+
+// Стили для липкого блока
+// @import "base/sticky";
+
+// Стили для полного блока экрана
+// @import "base/fullscreen";
+
+// Стили для прокрутки свитка
+// Styles for fullpage scroll
+// @import "base/fullpage";
+
+// Стили для волнового эффекта
+// Styles for ripple effect
+// @import "base/ripple";
+
+// Курсор -Курсорные стили
+// Styles for custom cursor
+// @import "base/cursor";
+
+// Стили для чувствительных картин (IBG)
+// Фрагмент (HTML): ibg (div с изображением и занятиями)
+// Фрагмент (HTML): ibga (a с изображением и занятиями)
+[class*="-ibg"] {
+	position: relative;
+	img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		object-fit: cover;
+	}
+}
+[class*="-ibg_contain"] {
+	img {
+		object-fit: contain;
+	}
+}
+
+//Шаблоны (заготовки)
+// @extend %имя шаблон;
+// Фрагмент (SCSS): ex
+
+// Счетчик для списка
+%listCounter {
+	list-style-type: none;
+	counter-reset: item;
+	li {
+		position: relative;
+		&:before {
+			counter-increment: item;
+			content: counter(item);
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+	}
+}
+// Адаптивное видео
+%responsiveVideo {
+	position: relative;
+	overflow: hidden;
+	height: 0;
+	padding-bottom: 56.25%;
+	video,
+	iframe,
+	object,
+	embed {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+// Видео как фон
+%videoBackground {
+	video,
+	iframe,
+	object,
+	embed {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		min-width: 100%;
+		min-height: 100%;
+		width: auto;
+		height: auto;
+		z-index: -100;
+		transform: translateX(-50%) translateY(-50%);
+		background-size: cover;
+	}
+}
+// Серый фильтр
+%grayfilter {
+	transition: all 0.3s ease 0s;
+	filter: grayscale(1);
+	@media (any-hover: hover) {
+		&:hover {
+			filter: grayscale(0);
+		}
+	}
+}
+// Отменить выбор
+%noselect {
+	user-select: none;
+}
+// Зеркальное отражение
+%mirror {
+	transform: scale(-1, 1);
+}
+// Плавный скрол
+%smoothscroll {
+	-webkit-overflow-scrolling: touch;
+}
+// Скрыть скрол
+%hidescroll {
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}

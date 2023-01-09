@@ -56,11 +56,15 @@ html {
 	&.loaded {
 		.payment__body{
 			transform:  scale(1);
-			transition: all 3s;
+			transition: all 1s;
 		}
 		.payment__image {
 			transform: translateX(0);
-			transition: all 2s 2.5s;
+			transition: all 1s 1.5s;
+		}
+		.header__body {
+			transform: translateY(0);
+			transition: transform 1s linear .5s;
 		}
 	}
 }

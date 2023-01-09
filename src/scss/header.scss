@@ -7,6 +7,8 @@
 	box-Shadow: 0px 4px 17px 10px rgb(58 42 42 / 39%);
 	background: linear-gradient(80.5deg, #83A4BD 11.55%, #A5A2B3 24.51%, #BA929B 33.33%, #BD8689 39.89%, #C46F6A 47.85%, #C65857 55.62%, #BF4145 65.14%, #9C2E37 75.49%, #7A262E 84.66%, #5B1E23 95.55%, #421F23 103.99%, #2D1C22 111.11%);
 	&__body {
+		width: 100%;
+		transform: translateY(-500%);
 		font-weight: 500;
 		padding: 20px 0;
 		display: flex;
@@ -31,7 +33,7 @@
 	}
 }
 .menu {
-	flex: 1 1 auto;
+	flex: 1 1 100%;
 	font-weight: 500;
 	line-height: 160%;
 	@include adaptiveValue("font-size", 18, 14, 0, 1169, 860);
@@ -93,11 +95,10 @@
 	display: none;
 	@media (max-width: em(684)) {
 		display: block;
-		position: absolute;
+		position: fixed;
 		width: rem(20);
 		height: rem(16);
-		//z-index: 98;
-		right: rem(23);
+		right: rem(30);
 		top: rem(22);
 		@media (any-hover: none) {
 			cursor: default;
@@ -123,6 +124,7 @@
 			top: calc(50% - rem(1));
 		}
 		.menu-open & {
+			transform: translateX(-145%);
 			span {
 				width: 0;
 			}

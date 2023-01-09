@@ -54,7 +54,7 @@
         position: relative;
         left: 9%;
         overflow-x: visible;
-        transform: rotate3d(1, 0, 0, 90deg);
+        transform: translateX(500%);
     }
     &__picture {
         width: 100%;
@@ -99,6 +99,14 @@
         grid-template-columns: repeat(2, 1fr);
         column-gap: 90px;
         row-gap: 60px;
+        perspective: 100000px;
+        &._watcher-view{
+            .item-direction {
+                transform: rotateX(0);
+                opacity: 1;
+                transition: opacity 2s, transform 3s .5s;
+            }
+    }
     }
 }
 .main-title {
@@ -112,6 +120,9 @@
     }
 }
 .item-direction {
+    transform: rotateX(90deg);
+    transition: opacity 1.5s, transform 3s .5s;
+    opacity: 0;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -171,11 +182,33 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 40px;
         padding-right: 20px;
-        transform: translate(-100%);
         &._watcher-view{
-            transform: translate(0);
-            
-            transition: transform 1.5s;
+            .cycle__point{
+                &:nth-child(1){
+                    transform: translateX(0);
+                    transition: transform 0.9s ease-out;
+                }
+                &:nth-child(2){
+                    transform: translateX(0);
+                    transition: transform 0.9s ease-out 0.5s;
+                }
+                &:nth-child(3){
+                    transform: translateX(0);
+                    transition: transform 0.9s ease-out 1s;
+                }
+                &:nth-child(4){
+                    transform: translateX(0);
+                    transition: transform 0.9s ease-out 1.5s;
+                }
+                &:nth-child(5){
+                    transform: translateX(0);
+                    transition: transform 0.9s ease-out 2s;
+                }
+                &:nth-child(6){
+                    transform: translateX(0);
+                    transition: transform 0.9s ease-out 2.5s;
+                }
+            }
         }
     }
     &__point {
@@ -183,6 +216,7 @@
         border: 1px solid rgba(255, 255, 255, 0.3);
         filter: drop-shadow(0px 10px 20px rgba(116, 18, 18, 0.05));
         border-radius: 6px;
+        transform: translateX(500%);
         &:hover {
             background-color: #F2323D;
         }

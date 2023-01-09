@@ -34,6 +34,10 @@
 	padding: rem(30) rem(78) rem(30) rem(30);
 	border-radius: rem(6);
 	position: relative;
+	&:hover {
+		text-decoration: underline;
+		transition: all 1s;
+	}
 	._spoller-init & {
 		cursor: pointer;
 		&::before,

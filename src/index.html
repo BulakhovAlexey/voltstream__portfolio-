@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  @@include('html/head.html',{ "title":"HomePage" })
+  @@include('html/head.html',{ "title":"VoltStream" })
   <body>
     <div class="wrapper">
       @@include('html/header.html',{})
@@ -67,7 +67,11 @@
                 Специализируемся на установке заземления по направлениям
               </h1>
             </div>
-            <div class="directions__box">
+            <div
+              data-watch
+              data-watch-threshold="0.2, 0.8"
+              class="directions__box"
+            >
               <div class="directions__item item-direction">
                 <div class="item-direction__photo">
                   <img
@@ -151,7 +155,7 @@
                 Выполняем весь цикл работ от расчета до оформления документации
               </h1>
             </div>
-            <div data-watch-once data-watch class="cycle__points">
+            <div data-watch data-watch-threshold="0.5" class="cycle__points">
               <div class="cycle__point point-cycle">
                 <a href="" class="point-cycle__link">
                   <h3 class="point-cycle__name">
@@ -166,7 +170,6 @@
                     Бесплатный выезд инжинера на замер
                   </h3>
                 </a>
-              </a>
                 <p class="point-cycle__num">02</p>
               </div>
               <div class="cycle__point point-cycle">

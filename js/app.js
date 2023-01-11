@@ -9538,7 +9538,6 @@ PERFORMANCE OF THIS SOFTWARE.
         }
         const da = new DynamicAdapt("max");
         da.init();
-        window["FLS"] = true;
         isWebp();
         addLoadedClass();
         menuInit();

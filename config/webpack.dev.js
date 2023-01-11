@@ -60,14 +60,14 @@ const config = {
     // Быть заметным на слабом ПК
     // (В папке режима разработчика (DIST) будет создана на диске)
 
-    devMiddleware: {
-      writeToDisk: true,
-    },
+    // devMiddleware: {
+    //   writeToDisk: true,
+    // },
 
     watchFiles: [
       `${paths.src}/**/*.html`,
       `${paths.src}/**/*.pug`,
-      `${paths.src}/**/*.htm`,
+      `${paths.src}/**/*.html`,
       `${paths.src}/img/**/*.*`,
     ],
   },

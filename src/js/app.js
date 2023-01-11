@@ -1,5 +1,5 @@
 // Включить/выключить FLS (Full Logging System) (в работе)
-window["FLS"] = true;
+//window["FLS"] = true;
 
 // Соединение файла основного стиля
 import "../scss/style.scss";

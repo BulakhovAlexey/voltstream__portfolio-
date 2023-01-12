@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" type="image/svg+xml" href="img/icons/favicon.svg" />
+	<link rel="icon" type="image/png" href="img/icons/favicon.png" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20230113013428" />
+	<title>VoltStream</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header data-scroll-show class="header">
+			<div class="header__container">
+				<div class="header__body">
+					<div class="header__logo">
+						<a href="#" class="header__logo-link">
+							<img class="header__logo-image" src="img/svg/logo.svg" alt="logo" />
+						</a>
+					</div>
+					<div class="header__menu menu">
+						<ul class="menu__list">
+							<li class="menu__list-item">
+								<a data-goto-header data-goto=".directions" class="menu__link" href="#">О нас</a>
+							</li>
+							<li class="menu__list-item">
+								<a data-goto-header data-goto=".cycle" class="menu__link" href="#">Этапы</a>
+							</li>
+							<li class="menu__list-item">
+								<a data-goto-header data-goto=".feedback" class="menu__link" href="#">Отзывы</a>
+							</li>
+							<li class="menu__list-item">
+								<a data-goto-header data-goto=".our-work" class="menu__link" href="#">Наши работы</a>
+							</li>
+							<li class="menu__list-item">
+								<a data-goto-header data-goto=".faq" class="menu__link" href="#">Вопрос ответ</a>
+							</li>
+						</ul>
+						<div class="menu__contact">
+							<a href="tel:78005554480" class="menu__contact-phone">+7 800 555 44 80</a>
+							<p class="menu__contact-popup">
+								<a data-goto-header data-goto=".get-engineer" class="menu__contact-link" href="#">Заказать обратный звонок</a>
+							</p>
+						</div>
+					</div>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<section class="payment">
+				<div class="payment__container">
+					<div class="payment__inner">
+						<div data-watch data-watch-once class="payment__body">
+							<h1 class="payment__title">
+								<span class="payment__title-main">Рассчитаем стоимость</span>
+								комплектующих и установки
+								<span>системы заземления </span>за 1 день
+							</h1>
+							<p class="payment__subtitle">
+								Получите подробную смету ответив всего на 5 простых вопросов
+							</p>
+							<div class="payment__button">
+								<a class="payment__link" href="#">Получить расчет</a>
+							</div>
+							<div data-da=".payment__container,693,2" class="payment__benefits benefits">
+								<div class="benefits__item">
+									<img src="img/svg/star.svg" alt="image" class="benefits__icon" />
+									<p class="benefits__desc">Собственное производство</p>
+								</div>
+								<div class="benefits__item">
+									<img src="img/svg/basket.svg" alt="image" class="benefits__icon" />
+									<p class="benefits__desc">Наличие товара на складе</p>
+								</div>
+								<div class="benefits__item">
+									<img src="img/svg/document.svg" alt="image" class="benefits__icon" />
+									<p class="benefits__desc">Выдаем всю документацию</p>
+								</div>
+							</div>
+						</div>
+						<div class="payment__image">
+							<picture><source srcset="img/main-image.webp" type="image/webp"><img class="payment__picture" src="img/main-image.jpg" alt="image" /></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section data-watch="navigator" class="directions">
+				<div class="directions__container">
+					<div class="directions__title main-title">
+						<h1 class="main-title__inner">
+							Специализируемся на установке заземления по направлениям
+						</h1>
+					</div>
+					<div data-watch data-watch-threshold="0.2, 0.8" class="directions__box">
+						<div class="directions__item item-direction">
+							<div class="item-direction__photo">
+								<picture><source srcset="img/unsplash_1.webp" type="image/webp"><img class="item-direction__image" src="img/unsplash_1.jpg" alt="image" /></picture>
+							</div>
+							<div class="item-direction__desc">
+								<h3 class="item-direction__title">Торговые центры</h3>
+								<ul class="item-direction__locations">
+									<li class="item-direction__location">
+										Садовый центр Дарвин
+									</li>
+									<li class="item-direction__location">OBI</li>
+									<li class="item-direction__location">Тц Вешняки</li>
+									<li class="item-direction__location">
+										ТЦ Любимый Мичуринский проспект
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="directions__item item-direction">
+							<div class="item-direction__photo">
+								<picture><source srcset="img/unsplash2.webp" type="image/webp"><img class="item-direction__image" src="img/unsplash2.jpg" alt="image" /></picture>
+							</div>
+							<div class="item-direction__desc">
+								<h3 class="item-direction__title">Частные дома</h3>
+								<p class="item-direction__text">
+									Установили заземления и молние защиту для более 2000 домов
+								</p>
+							</div>
+						</div>
+						<div class="directions__item item-direction">
+							<div class="item-direction__photo">
+								<picture><source srcset="img/unsplash3.webp" type="image/webp"><img class="item-direction__image" src="img/unsplash3.jpg" alt="image" /></picture>
+							</div>
+							<div class="item-direction__desc">
+								<h3 class="item-direction__title">Складские комплексы</h3>
+								<p class="item-direction__text">
+									Установили заземление и молниезащиту для более 100 складских
+									комплексов
+								</p>
+							</div>
+						</div>
+						<div class="directions__item item-direction">
+							<div class="item-direction__photo">
+								<picture><source srcset="img/unsplash4.webp" type="image/webp"><img class="item-direction__image" src="img/unsplash4.jpg" alt="image" /></picture>
+							</div>
+							<div class="item-direction__desc">
+								<h3 class="item-direction__title">Производственные здания</h3>
+								<ul class="item-direction__locations">
+									<li class="item-direction__location">Завод Renault</li>
+									<li class="item-direction__location">Завод Майский Чай</li>
+									<li class="item-direction__location">Завод Хохланд Рус</li>
+									<li class="item-direction__location">
+										Завод KERAMA MARAZZI
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section data-watch="navigator" class="cycle">
+				<div class="cycle__container">
+					<div class="cycle__title main-title">
+						<h1 class="main-title__inner">
+							Выполняем весь цикл работ от расчета до оформления документации
+						</h1>
+					</div>
+					<div data-watch data-watch-threshold="0.5" class="cycle__points">
+						<div class="cycle__point point-cycle">
+							<a href="" class="point-cycle__link">
+								<h3 class="point-cycle__name">
+									Предварительный расчет материалов и стоимости работ
+								</h3>
+							</a>
+							<p class="point-cycle__num">01</p>
+						</div>
+						<div class="cycle__point point-cycle">
+							<a href="#!" class="point-cycle__link">
+								<h3 class="point-cycle__name">
+									Бесплатный выезд инжинера на замер
+								</h3>
+							</a>
+							<p class="point-cycle__num">02</p>
+						</div>
+						<div class="cycle__point point-cycle">
+							<a href="#!" class="point-cycle__link">
+								<h3 class="point-cycle__name">Заключение договора</h3>
+							</a>
+							<p class="point-cycle__num">03</p>
+						</div>
+						<div class="cycle__point point-cycle">
+							<a href="#!" class="point-cycle__link">
+								<h3 class="point-cycle__name">Предоплата</h3>
+							</a>
+							<p class="point-cycle__num">04</p>
+						</div>
+						<div class="cycle__point point-cycle">
+							<a href="#!" class="point-cycle__link">
+								<h3 class="point-cycle__name">Выполнение работ</h3>
+							</a>
+							<p class="point-cycle__num">05</p>
+						</div>
+						<div class="cycle__point point-cycle">
+							<a href="#!" class="point-cycle__link">
+								<h3 class="point-cycle__name">
+									Оплата и выдача исполнительной документации
+								</h3>
+							</a>
+							<p class="point-cycle__num">06</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section data-watch="navigator" class="feedback">
+				<div class="feedback__container">
+					<div class="feedback__row block__row">
+						<div class="feedback__title main-title">
+							<h1 class="main-title__inner">Отзывы о работе с нами</h1>
+						</div>
+						<div data-da=".feedback,684,3" class="feedback__buttons swiper__buttons">
+							<button type="button" class="feedback__button-prev swiper-button-prev">
+								<img src="img/svg/arrow-left.svg" alt="arrow" />
+							</button>
+							<button type="button" class="feedback__button-next swiper-button-next">
+								<img src="img/svg/arrow-left.svg" alt="arrow" />
+							</button>
+						</div>
+					</div>
+					<div class="feedback__slider swiper">
+						<!-- Часть слайдера, движущийся -->
+						<div class="feedback__wrapper swiper-wrapper">
+							<div data-gallery class="feedback__slide swiper-slide">
+								<a href="img/sert1.jpg"><picture><source srcset="img/sert1.webp" type="image/webp"><img class="feedback__item" src="img/sert1.jpg" alt="sertificat" /></picture>
+								</a>
+							</div>
+							<div data-gallery class="feedback__slide swiper-slide">
+								<a href="img/sert2.jpg"><picture><source srcset="img/sert2.webp" type="image/webp"><img class="feedback__item" src="img/sert2.jpg" alt="sertificat" /></picture>
+								</a>
+							</div>
+							<div data-gallery class="feedback__slide swiper-slide">
+								<a href="img/sert3.jpg"><picture><source srcset="img/sert3.webp" type="image/webp"><img class="feedback__item" src="img/sert3.jpg" alt="sertificat" /></picture>
+								</a>
+							</div>
+							<div data-gallery class="feedback__slide swiper-slide">
+								<a href="img/sert4.jpg"><picture><source srcset="img/sert4.webp" type="image/webp"><img class="feedback__item" src="img/sert4.jpg" alt="sertificat" /></picture>
+								</a>
+							</div>
+							<div data-gallery class="feedback__slide swiper-slide">
+								<a href="img/sert1.jpg"><picture><source srcset="img/sert1.webp" type="image/webp"><img class="feedback__item" src="img/sert1.jpg" alt="sertificat" /></picture>
+								</a>
+							</div>
+							<div data-gallery class="feedback__slide swiper-slide">
+								<a href="img/sert2.jpg"><picture><source srcset="img/sert2.webp" type="image/webp"><img class="feedback__item" src="img/sert2.jpg" alt="sertificat" /></picture>
+								</a>
+							</div>
+						</div>
+						<!-- Если требуется навигация (лево право) -->
+					</div>
+				</div>
+			</section>
+			<section data-watch="navigator" class="our-work">
+				<div class="our-work__container">
+					<div class="our-work__row block__row">
+						<div class="our-work__title main-title">
+							<h1 class="main-title__inner">Фото готовых работ</h1>
+						</div>
+						<div data-da=".our-work,684,3" class="our-work__buttons swiper__buttons">
+							<button type="button" class="our-work__button-prev swiper-button-prev">
+								<img src="img/svg/arrow-left.svg" alt="arrow" />
+							</button>
+							<button type="button" class="our-work__button-next swiper-button-next">
+								<img src="img/svg/arrow-left.svg" alt="arrow" />
+							</button>
+						</div>
+					</div>
+					<div class="our-work__slider swiper">
+						<!-- Часть слайдера, движущийся -->
+						<div class="our-work__wrapper swiper-wrapper">
+							<div data-gallery class="our-work__slide swiper-slide">
+								<a href="img/work1.png"><picture><source srcset="img/work1.webp" type="image/webp"><img class="our-work__item" src="img/work1.png" alt="work" /></picture>
+								</a>
+							</div>
+							<div data-gallery class="our-work__slide swiper-slide">
+								<a href="img/work2.png"><picture><source srcset="img/work2.webp" type="image/webp"><img class="our-work__item" src="img/work2.png" alt="work" /></picture>
+								</a>
+							</div>
+							<div data-gallery class="our-work__slide swiper-slide">
+								<a href="img/work3.png"><picture><source srcset="img/work3.webp" type="image/webp"><img class="our-work__item" src="img/work3.png" alt="work" /></picture>
+								</a>
+							</div>
+							<div data-gallery class="our-work__slide swiper-slide">
+								<a href="img/work1.png"><picture><source srcset="img/work1.webp" type="image/webp"><img class="our-work__item" src="img/work1.png" alt="work" /></picture>
+								</a>
+							</div>
+							<div data-gallery class="our-work__slide swiper-slide">
+								<a href="img/work2.png"><picture><source srcset="img/work2.webp" type="image/webp"><img class="our-work__item" src="img/work2.png" alt="work" /></picture>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section data-watch="navigator" class="get-engineer">
+				<div class="get-engineer__container">
+					<div class="get-engineer__inner">
+						<div class="get-engineer__photo" data-da=".get-engineer__container,800,0">
+							<picture><source srcset="img/engineer.webp" type="image/webp"><img src="img/engineer.png" alt="engineer" /></picture>
+						</div>
+						<div class="get-engineer__body">
+							<h1 class="get-engineer__title">
+								Закажите <span>бесплатную консультацию</span> инженера и
+								получите полный расчет стоимости комплектующих и установки
+							</h1>
+
+							<form data-dev class="get-engineer__form form" action="#">
+								<input data-validate autocomplete="off" type="text" name="form[]" placeholder="Ваше имя" class="get-engineer__input input" />
+								<input data-validate autocomplete="off" type="tel" data-inputmask="'mask': '+7-999-9999999'" name="form[]" placeholder="Ваш телефон" class="get-engineer__input input" />
+								<button class="get-engineer__button" type="submit">
+									Заказать
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="quality">
+				<div class="quality__container">
+					<div class="quality__row block__row">
+						<div class="quality__title main-title">
+							<h1 class="main-title__inner">
+								Комплектующие для систем заземления и молниезащиты
+								сертефицированны в независимых лабораториях
+							</h1>
+						</div>
+						<div data-da=".quality,684,3" class="quality__buttons swiper__buttons">
+							<button type="button" class="quality__button-prev swiper-button-prev">
+								<img src="img/svg/arrow-left.svg" alt="arrow" />
+							</button>
+							<button type="button" class="quality__button-next swiper-button-next">
+								<img src="img/svg/arrow-left.svg" alt="arrow" />
+							</button>
+						</div>
+					</div>
+					<div class="quality__slider swiper">
+						<!-- Часть слайдера, движущийся -->
+						<div class="quality__wrapper swiper-wrapper">
+							<div data-gallery class="quality__slide swiper-slide">
+								<a href="img/quality.jpg"><picture><source srcset="img/quality.webp" type="image/webp"><img class="quality__item" src="img/quality.jpg" alt="quality" /></picture>
+								</a>
+							</div>
+							<div data-gallery class="quality__slide swiper-slide">
+								<a href="img/quality.jpg"><picture><source srcset="img/quality.webp" type="image/webp"><img class="quality__item" src="img/quality.jpg" alt="quality" /></picture>
+								</a>
+							</div>
+							<div data-gallery class="quality__slide swiper-slide">
+								<a href="img/quality.jpg"><picture><source srcset="img/quality.webp" type="image/webp"><img class="quality__item" src="img/quality.jpg" alt="quality" /></picture>
+								</a>
+							</div>
+							<div data-gallery class="quality__slide swiper-slide">
+								<a href="img/quality.jpg"><picture><source srcset="img/quality.webp" type="image/webp"><img class="quality__item" src="img/quality.jpg" alt="quality" /></picture>
+								</a>
+							</div>
+							<div data-gallery class="quality__slide swiper-slide">
+								<a href="img/quality.jpg"><picture><source srcset="img/quality.webp" type="image/webp"><img class="quality__item" src="img/quality.jpg" alt="quality" /></picture>
+								</a>
+							</div>
+							<div data-gallery class="quality__slide swiper-slide">
+								<a href="img/quality.jpg"><picture><source srcset="img/quality.webp" type="image/webp"><img class="quality__item" src="img/quality.jpg" alt="quality" /></picture>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section data-watch="navigator" class="faq">
+				<div class="faq__container">
+					<div class="faq__title main-title">
+						<h1 class="main-title__inner">Ответы на частые вопросы</h1>
+					</div>
+					<div class="faq__inner">
+						<div data-spollers data-one-spoller class="spollers">
+							<div class="spollers__col1">
+								<div class="spollers__item">
+									<button type="button" data-spoller class="spollers__title _spoller-active">
+										Сколько времени потребуется на расчет?
+									</button>
+									<div class="spollers__body">
+										Время от отправки заявки до готовой сметы и проекта
+										занимает в среднем 3-5 дней
+									</div>
+								</div>
+								<div class="spollers__item">
+									<button type="button" data-spoller class="spollers__title">
+										Длительность монтажа для частного дома?
+									</button>
+									<div class="spollers__body">
+										Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+										Minima quo et totam quae quidem sequi nisi dolorem fuga
+										nobis perferendis.
+									</div>
+								</div>
+							</div>
+							<div class="spollers__col2">
+								<div class="spollers__item">
+									<button type="button" data-spoller class="spollers__title">
+										Какая документация предоставляется после монтажа?
+									</button>
+									<div class="spollers__body">
+										Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+										Minima quo et totam quae quidem sequi nisi dolorem fuga
+										nobis perferendis. Lorem ipsum dolor sit amet consectetur
+										adipisicing elit. Aut rem est consequatur enim odit eius
+										sapiente fuga! Sapiente, odit eligendi?
+									</div>
+								</div>
+								<div class="spollers__item">
+									<button type="button" data-spoller class="spollers__title">
+										Какой материал используется в заземлении
+									</button>
+									<div class="spollers__body">Lorem, ipsum dolor</div>
+								</div>
+								<div class="spollers__item">
+									<button type="button" data-spoller class="spollers__title">
+										Какие способы оплаты принимаете?
+									</button>
+									<div class="spollers__body">
+										Lorem, ipsum dolor sit amet ui nisi dolorem fuga nobis
+										perferendis.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="contact">
+				<div class="contact__inner">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3846.3575084193303!2d37.73241070190201!3d55.72572812035453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab53f63a98f11%3A0x90b3b76b3bed196!2z0JPQsNC30LPQvtC70YzQtNC10YDQvdCw0Y8g0YPQuy4sIDEyINGB0YLRgNC-0LXQvdC40LUgNSwg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEwOTA1Mg!5e0!3m2!1sru!2sge!4v1673104964838!5m2!1sru!2sge" width="100%" height="600" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					<div class="contact__block">
+						<h1 class="contact__title">
+							Свяжитесь с нами или приезжайте в гости на чашечку кофе!
+						</h1>
+						<div class="contact__info">
+							<a class="contact__phone" href="tel:+78005554480">+7 800 555 44 80
+							</a>
+							<a class="contact__email" href="mailto:Info@voltstream.ru">Info@voltstream.ru</a>
+						</div>
+						<p class="contact__adress">
+							Россия, Москва, Ул. Газгольдерная 12 стр. 5
+						</p>
+						<div class="contact__logos">
+							<a href="#"><i class="fa-brands fa-instagram"></i></a>
+							<a href="#"><i class="fa-brands fa-twitter"></i></a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer"></footer>
+
+	</div>
+	<!-- <div id="form-message" aria-hidden="true" class="popup">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <button data-close type="button" class="popup__close">close</button>
+      <div class="popup__text">Error</div>
+    </div>
+  </div>
+</div>
+ -->
+	<script src="https://kit.fontawesome.com/9ca418d431.js?_v=20230113013428" crossorigin="anonymous"></script>
+	<script src="js/app.min.js?_v=20230113013428"></script>
+</body>
+
+</html>

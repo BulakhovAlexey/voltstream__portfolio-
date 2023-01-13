@@ -106,7 +106,6 @@
         &__photo {
             position: relative;
             left: 0;
-            //z-index: 5;
             max-width: 373px;
             min-width: 200px;
             margin: 0 auto;
@@ -200,6 +199,14 @@
         text-align: center;
         flex: 1 1 100%;
     }
+    .payment__image {
+        flex: 1 1 100%;
+        padding-bottom: percent(555,758);
+        img {
+            width: 100%;
+            
+        }
+    }
     .benefits {
         display: flex;
         flex-direction: column;
@@ -281,7 +288,6 @@
         top: 0;
         left: 0;
         background-color: cadetblue;
-        //z-index: 99;
     }
     .payment {
         &__inner {

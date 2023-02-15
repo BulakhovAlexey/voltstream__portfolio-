@@ -2,7 +2,7 @@
 
 Одностраничный лендинг, выполненный по макету из Figma.
 
-[_ссылка на github-pages_](https://github.com/BulakhovAlexey/atlant_page__portfolio-/deployments/activity_log?environment=github-pages)
+[_ссылка на github-pages_](https://bulakhovalexey.github.io/voltstream__portfolio-/)
 
 ## Описание
 

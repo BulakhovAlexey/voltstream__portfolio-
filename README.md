@@ -2,7 +2,9 @@
 
 Одностраничный лендинг, выполненный по макету из Figma.
 
-[_ссылка на github-pages_](https://bulakhovalexey.github.io/voltstream__portfolio-/)
+[_ссылка на результат_](https://bulakhovalexey.github.io/voltstream__portfolio-/)
+
+[_ссылка на макет_](<https://www.figma.com/file/aH3Oo7LUl75HoANcecy2PF/voltstram-landing-(Copy)?node-id=0%3A1&t=LkPzveYxAMeyRtGr-0>)
 
 ## Описание
 
